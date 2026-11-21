@@ -1,0 +1,63 @@
+train 592,198 rows (29 Jul-08 Sep), test 187,737 rows (09 Sep-21 Sep)
+Random Forest (default) ...
+Random Forest (search) ...
+  best {'n_estimators': 200, 'min_samples_leaf': 10, 'max_features': 0.33, 'max_depth': None}
+XGBoost (default) ...
+XGBoost (search) ...
+  best {'subsample': 0.9, 'objective': 'reg:absoluteerror', 'n_estimators': 900, 'min_child_weight': 5, 'max_depth': 6, 'learning_rate': 0.05, 'colsample_bytree': 0.7}
+XGBoost round-1 features (reference) ...
+                            model         type                          tuned  MAE_s  RMSE_s  MAPE_%    R2  MAE_improvement_vs_best_baseline_%  MAE_raw_uncapped_s
+       Baseline: mean per segment     baseline                              - 41.013 124.637  76.570 0.462                             -13.697              42.439
+Baseline: mean per segment x hour     baseline                              - 36.072 103.428  65.547 0.630                               0.000              37.499
+                Linear Regression           ML               no tuning needed 35.939 102.368  66.729 0.637                               0.368              37.366
+                    Random Forest           ML               before (default) 33.848  95.806  62.765 0.682                               6.164                 NaN
+                    Random Forest           ML after (TimeSeriesSplit search) 33.503  96.524  61.815 0.677                               7.123              34.929
+                          XGBoost           ML               before (default) 37.425 103.136  69.903 0.632                              -3.750                 NaN
+                          XGBoost           ML after (TimeSeriesSplit search) 32.093  99.640  52.333 0.656                              11.030              33.519
+       XGBoost (round 1 features) ML (round 1)           round-1 tuned params 32.126  99.827  52.381 0.655                              10.939              33.552
+best ML model: XGBoost
+
+Journey (8 stops, features as of journey start):
+                             model   MAE_s  RMSE_s  MAPE_%    R2  MAE_improvement_vs_best_baseline_%  n_journeys
+       Baseline: mean per segment 242.887 469.519  19.115 0.413                             -18.173       21545
+Baseline: mean per segment x hour 205.535 395.729  16.339 0.583                               0.000       21545
+                Linear Regression 201.685 388.513  16.404 0.598                               1.873       21545
+                    Random Forest 187.335 362.988  15.402 0.649                               8.855       21545
+                          XGBoost 189.626 367.227  15.895 0.641                               7.740       21545
+       XGBoost (round 1 features) 188.985 379.954  14.789 0.616                               8.052       21545
+
+Classification (Late = journey > 1.2 x usual time):
+                                         model  accuracy  F1_late  recall_late  precision_late
+Baseline: historical average (always On time)     0.819    0.000        0.000           0.000
+          Logistic Regression (class weights)     0.752    0.496        0.673           0.392
+     Random Forest Classifier (class weights)     0.816    0.574        0.682           0.495
+{
+  "best_ml_model": "XGBoost",
+  "best_baseline": "Baseline: mean per segment x hour",
+  "best_baseline_MAE_s": 36.071847635583424,
+  "best_ml_MAE_s": 32.093,
+  "improvement_%": 11.03,
+  "target_15pct_met": false,
+  "rf_best_params": {
+    "n_estimators": 200,
+    "min_samples_leaf": 10,
+    "max_features": 0.33,
+    "max_depth": null
+  },
+  "xgb_best_params": {
+    "subsample": 0.9,
+    "objective": "reg:absoluteerror",
+    "n_estimators": 900,
+    "min_child_weight": 5,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.7
+  },
+  "xgb_round1_features_MAE_s": 32.126,
+  "journey_best_baseline_MAE_s": 205.5352264951006,
+  "journey_xgb_MAE_s": 189.626,
+  "journey_rf_MAE_s": 187.335,
+  "train_rows": 592198,
+  "test_rows": 187737,
+  "runtime_min": 13.7
+}

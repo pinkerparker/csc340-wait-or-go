@@ -1,0 +1,6 @@
+model,MAE_s,RMSE_s,MAPE_%,R2,MAE_improvement_vs_best_baseline_%
+Baseline: mean per segment,242.887,469.519,19.115,0.413,-18.45
+Baseline: mean per segment x hour,205.054,395.51,16.297,0.583,0.0
+Linear Regression,198.944,386.583,16.092,0.602,2.98
+Random Forest,186.047,369.859,14.8,0.636,9.269
+XGBoost,186.88,378.666,14.571,0.618,8.863

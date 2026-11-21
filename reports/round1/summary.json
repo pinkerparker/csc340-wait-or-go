@@ -1,0 +1,26 @@
+{
+  "best_ml_model": "XGBoost",
+  "best_baseline": "Baseline: mean per segment x hour",
+  "best_baseline_MAE_s": 36.071847635583424,
+  "best_ml_MAE_s": 32.109,
+  "improvement_%": 10.987,
+  "target_15pct_met": false,
+  "rf_best_params": {
+    "n_estimators": 200,
+    "min_samples_leaf": 10,
+    "max_features": 0.33,
+    "max_depth": null
+  },
+  "xgb_best_params": {
+    "subsample": 0.9,
+    "objective": "reg:absoluteerror",
+    "n_estimators": 900,
+    "min_child_weight": 5,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.7
+  },
+  "train_rows": 592198,
+  "test_rows": 187737,
+  "runtime_min": 10.7
+}

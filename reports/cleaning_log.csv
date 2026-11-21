@@ -1,0 +1,7 @@
+step,rows_before,rows_after,rows_removed,reason
+duplicates,785976,785976,0,"same trip, stop pair and start time"
+run_time <= 0,785976,785051,925,impossible travel time
+run_time > 3600s,785051,784946,105,multi-hour gap = GPS/logging error
+start == end stop,784946,784946,0,not a real segment
+rare segments (<50 in train),784946,779935,5011,detours / rare stop pairs
+"cap per segment (1st-99th pct, train)",779935,779935,0,"15,537 values capped, not removed"

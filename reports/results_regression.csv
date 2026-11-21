@@ -1,0 +1,9 @@
+model,type,tuned,MAE_s,RMSE_s,MAPE_%,R2,MAE_improvement_vs_best_baseline_%,MAE_raw_uncapped_s
+Baseline: mean per segment,baseline,-,41.013,124.637,76.57,0.462,-13.697,42.439
+Baseline: mean per segment x hour,baseline,-,36.072,103.428,65.547,0.63,0.0,37.499
+Linear Regression,ML,no tuning needed,35.939,102.368,66.729,0.637,0.368,37.366
+Random Forest,ML,before (default),33.848,95.806,62.765,0.682,6.164,
+Random Forest,ML,after (TimeSeriesSplit search),33.503,96.524,61.815,0.677,7.123,34.929
+XGBoost,ML,before (default),37.425,103.136,69.903,0.632,-3.75,
+XGBoost,ML,after (TimeSeriesSplit search),32.093,99.64,52.333,0.656,11.03,33.519
+XGBoost (round 1 features),ML (round 1),round-1 tuned params,32.126,99.827,52.381,0.655,10.939,33.552

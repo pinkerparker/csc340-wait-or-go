@@ -1,0 +1,7 @@
+params,mean_test_score,std_test_score,MAE_cv
+"{'n_estimators': 200, 'min_samples_leaf': 10, 'max_features': 0.33, 'max_depth': None}",-33.779581115039385,0.8604086811056146,33.779581115039385
+"{'n_estimators': 100, 'min_samples_leaf': 20, 'max_features': 0.8, 'max_depth': None}",-33.988886969479054,0.8588547767705098,33.988886969479054
+"{'n_estimators': 200, 'min_samples_leaf': 20, 'max_features': 0.33, 'max_depth': None}",-34.08860962116142,0.8298252860069995,34.08860962116142
+"{'n_estimators': 200, 'min_samples_leaf': 1, 'max_features': 0.5, 'max_depth': 18}",-34.16872080411517,1.0357890356638721,34.16872080411517
+"{'n_estimators': 100, 'min_samples_leaf': 1, 'max_features': 0.5, 'max_depth': None}",-34.35118922777777,1.0015266952133768,34.35118922777777
+"{'n_estimators': 200, 'min_samples_leaf': 1, 'max_features': 0.33, 'max_depth': None}",-34.35592753388888,1.1545363184191961,34.35592753388888

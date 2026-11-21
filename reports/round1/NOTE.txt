@@ -1,0 +1,4 @@
+Round 1 outputs (first training run, 20 features), kept for the before/after comparison.
+NOTE: results_journey_8stops.csv and results_classification.csv in this folder used per-segment
+lags observed AFTER the journey started (a small look-ahead). This was fixed in round 2: all
+journey-level features are frozen at the origin stop. Use the files in reports/ for final numbers.

@@ -1,0 +1,7 @@
+model,MAE_s,RMSE_s,MAPE_%,R2,MAE_improvement_vs_best_baseline_%,n_journeys
+Baseline: mean per segment,242.887,469.519,19.115,0.413,-18.173,21545
+Baseline: mean per segment x hour,205.535,395.729,16.339,0.583,0.0,21545
+Linear Regression,201.685,388.513,16.404,0.598,1.873,21545
+Random Forest,187.335,362.988,15.402,0.649,8.855,21545
+XGBoost,189.626,367.227,15.895,0.641,7.74,21545
+XGBoost (round 1 features),188.985,379.954,14.789,0.616,8.052,21545

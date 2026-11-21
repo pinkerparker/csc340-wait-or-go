@@ -1,0 +1,4 @@
+model,accuracy,F1_late,recall_late,precision_late
+Baseline: historical average (always On time),0.819,0.0,0.0,0.0
+Logistic Regression (class weights),0.752,0.496,0.673,0.392
+Random Forest Classifier (class weights),0.816,0.574,0.682,0.495

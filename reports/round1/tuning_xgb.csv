@@ -1,0 +1,13 @@
+params,mean_test_score,std_test_score,MAE_cv
+"{'subsample': 0.9, 'objective': 'reg:absoluteerror', 'n_estimators': 900, 'min_child_weight': 5, 'max_depth': 6, 'learning_rate': 0.05, 'colsample_bytree': 0.7}",-32.63148459983105,1.0167386831754912,32.63148459983105
+"{'subsample': 0.9, 'objective': 'reg:absoluteerror', 'n_estimators': 300, 'min_child_weight': 5, 'max_depth': 6, 'learning_rate': 0.1, 'colsample_bytree': 0.7}",-32.70930289794824,0.9714564554144213,32.70930289794824
+"{'subsample': 0.9, 'objective': 'reg:absoluteerror', 'n_estimators': 900, 'min_child_weight': 5, 'max_depth': 10, 'learning_rate': 0.1, 'colsample_bytree': 0.9}",-33.29809883956107,1.1204684533081777,33.29809883956107
+"{'subsample': 0.7, 'objective': 'reg:squarederror', 'n_estimators': 300, 'min_child_weight': 1, 'max_depth': 10, 'learning_rate': 0.03, 'colsample_bytree': 0.7}",-33.69689348149665,1.0093719204159581,33.69689348149665
+"{'subsample': 0.9, 'objective': 'reg:squarederror', 'n_estimators': 300, 'min_child_weight': 1, 'max_depth': 10, 'learning_rate': 0.05, 'colsample_bytree': 0.7}",-34.064269251980896,1.050378591747914,34.064269251980896
+"{'subsample': 0.7, 'objective': 'reg:squarederror', 'n_estimators': 600, 'min_child_weight': 5, 'max_depth': 6, 'learning_rate': 0.05, 'colsample_bytree': 0.9}",-34.26404529357833,0.893113480407622,34.26404529357833
+"{'subsample': 0.9, 'objective': 'reg:squarederror', 'n_estimators': 900, 'min_child_weight': 10, 'max_depth': 10, 'learning_rate': 0.03, 'colsample_bytree': 0.9}",-34.41335935094962,1.1396616410580656,34.41335935094962
+"{'subsample': 0.9, 'objective': 'reg:squarederror', 'n_estimators': 300, 'min_child_weight': 10, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.7}",-34.592983389671815,1.1941467757143807,34.592983389671815
+"{'subsample': 0.7, 'objective': 'reg:squarederror', 'n_estimators': 600, 'min_child_weight': 1, 'max_depth': 6, 'learning_rate': 0.1, 'colsample_bytree': 0.7}",-34.72452579559508,1.1096423006859975,34.72452579559508
+"{'subsample': 0.9, 'objective': 'reg:squarederror', 'n_estimators': 600, 'min_child_weight': 5, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.9}",-35.21917500851733,0.9940174547786326,35.21917500851733
+"{'subsample': 0.9, 'objective': 'reg:squarederror', 'n_estimators': 600, 'min_child_weight': 10, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.7}",-35.288123811437295,1.1987447848123995,35.288123811437295
+"{'subsample': 0.9, 'objective': 'reg:squarederror', 'n_estimators': 600, 'min_child_weight': 10, 'max_depth': 8, 'learning_rate': 0.1, 'colsample_bytree': 0.9}",-35.38683418572929,1.1575208040487177,35.38683418572929

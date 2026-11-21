@@ -1,0 +1,4 @@
+route,MAE Baseline: mean per segment x hour,MAE XGBoost,n
+A,37.52,33.47,82298
+B,33.44,30.29,52283
+C,36.43,31.79,53156
