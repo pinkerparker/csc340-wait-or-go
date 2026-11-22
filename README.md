@@ -1,10 +1,28 @@
-# Bus travel time prediction: ML vs historical averages
+# Wait or Go? Bus travel time prediction: ML vs historical averages
 
 CSC340 Artificial Intelligence, SIT KMUTT. Group project.
 
 **Research question:** Can a machine-learning model predict bus travel time between stops more accurately than the historical-average methods a commuter uses today?
 
 **Answer (test set, 9–21 Sep 2024):** Yes, but by less than our 15% goal. Tuned XGBoost cuts the per-segment error from 36.07 s to 32.09 s (**−11.0% MAE**) compared with the best non-AI baseline (segment × hour average). Over an 8-stop journey, Random Forest cuts the error from 205.5 s to 187.3 s (−8.9%). For On time / Late, a Random Forest classifier catches 68% of late journeys (F1 0.57), while the historical average catches none.
+
+## Quick start: run the app from GitHub
+
+The demo app ("Wait or Go?") needs no extra data. The trained model and lookup tables are in the repo.
+
+```bash
+git clone https://github.com/pinkerparker/csc340-wait-or-go.git
+cd csc340-wait-or-go
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+streamlit run app/app.py
+```
+
+Then open http://localhost:8501. Next time: `cd csc340-wait-or-go`, `source .venv/bin/activate`, `streamlit run app/app.py`.
+On macOS, if XGBoost complains about `libomp`, run `brew install libomp`.
+
+To re-run the notebook or retrain the models, first download the raw data (step 1 below).
 
 ## Folder layout
 
@@ -18,8 +36,8 @@ bus-travel-time/
 │   ├── prepare.py                  # cleaning + features  -> data/*.parquet, data/lookup.joblib
 │   └── train.py                    # baselines, models, tuning, classification -> models/, reports/
 ├── notebooks/bus_travel_time.ipynb # same steps, executed, with outputs
-├── app/app.py                      # Streamlit demo
-├── models/                         # saved models (*.joblib)
+├── app/app.py                      # Streamlit demo ("Wait or Go?")
+├── models/                         # saved models (*.joblib; xgboost_model.json is used by the app)
 ├── reports/                        # results tables (*.csv), charts (*.png), round1/ = first run
 ├── requirements.txt
 └── README.md

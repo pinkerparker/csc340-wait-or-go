@@ -1,0 +1,9 @@
+model,actual,predicted,trips,meaning
+Logistic Regression,On time,On time,13513,Correct: on time
+Logistic Regression,On time,Late,4060,False alarm
+Logistic Regression,Late,On time,1274,Missed late trip
+Logistic Regression,Late,Late,2621,Correct: late caught
+Random Forest,On time,On time,14867,Correct: on time
+Random Forest,On time,Late,2706,False alarm
+Random Forest,Late,On time,1238,Missed late trip
+Random Forest,Late,Late,2657,Correct: late caught

@@ -1,0 +1,13 @@
+rank,feature,label,importance,importance_pct
+1,seg_hour_mean,Average time of this segment at this hour,0.569,56.9
+2,lag_run,Time the previous bus took on this segment,0.099,9.9
+3,seg_mean,Average time of this segment,0.059,5.9
+4,bus_delay_missing,First stop of the trip (no delay info yet),0.038,3.8
+5,position,Position of the stop along the route,0.025,2.5
+6,seg_id,Which segment (stop pair),0.022,2.2
+7,route_code,"Bus line (A, B, C)",0.021,2.1
+8,lag_dwell,How long the previous bus stopped here,0.02,2.0
+9,lag_ratio,Previous bus: slower or faster than usual,0.02,2.0
+10,is_weekend,Weekend or weekday,0.019,1.9
+11,lag_age_min,How old the previous-bus info is (minutes),0.015,1.5
+12,hour,Hour of day,0.014,1.4

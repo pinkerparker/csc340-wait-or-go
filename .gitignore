@@ -12,3 +12,9 @@ data/*.parquet
 
 # Leftover transfer pieces
 _to_delete/
+
+# Slides and speaker scripts are shared separately
+presentation/
+
+# Web (artifact) version is kept separately
+web/
